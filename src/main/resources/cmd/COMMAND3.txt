@@ -1,0 +1,89 @@
+! ShowNavBar
+
+2 ShowSettings
+
+3 ShowProjectStructureSettings
+
+4 $Cut
+
+
+6 GotoTypeDeclaration
+
+7 GotoTest
+
+8 GotoRelated
+
+9 CloseActiveTab
+
+0 GotoAction
+
+= FileStructurePopup
+
+q ShowBookmarks
+
+w EditorDeleteToWordStart
+W EditorDeleteToWordEnd
+
+e PreviousOccurence
+
+r NextOccurence
+
+t ShowPopupMenu
+u Rerun
+
+
+o NextParameter
+O PrevParameter
+
+s Switcher
+
+
+f AddToFavoritesPopup
+
+g Resume
+
+
+J EditorScrollUp
+
+K EditorScrollDown
+
+; RemoveFromFavorites
+: EditorContextInfo
+
+
+x $Delete
+b ViewBreakpoints
+
+
+n NextProjectWindow
+N PreviousProjectWindow
+
+> $Copy
+Y $SelectAll
+
+
+l EditorRightWithSelection
+L EditorLineEndWithSelection
+
+z EditorMoveToPageTopWithSelection
+Z EditorMoveToPageBottomWithSelection
+
+h EditorLeftWithSelection
+H EditorLineStartWithSelection
+
+j EditorDownWithSelection
+
+k EditorUpWithSelection
+
+p EditorPageUpWithSelection
+P EditorPageDownWithSelection
+
+
+C EditorTextEndWithSelection
+v EditorCodeBlockEndWithSelection
+V EditorCodeBlockStartWithSelection
+
+m EditorPreviousWordWithSelection
+M EditorNextWordWithSelection
+
+

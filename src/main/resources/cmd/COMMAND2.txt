@@ -1,0 +1,22 @@
+1 ToggleLineBreakpoint
+2 QuickJavaDoc
+
+4 ProjectViewChangeView
+
+0 HighlightUsagesInFile
+
+q EvaluateExpression
+
+w ClassNameCompletion
+
+P EditorToggleShowLineNumbers
+
+h CallHierarchy
+
+i InsertLiveTemplate
+
+
+e MoveLineUp
+E MoveStatementUp
+d MoveLineDown
+D MoveStatementDown
