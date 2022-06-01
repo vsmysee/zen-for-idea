@@ -45,17 +45,6 @@ public class MyTypedActionHandler implements TypedActionHandler {
   @Override
   public void execute(@NotNull Editor editor, char charTyped, @NotNull DataContext dataContext) {
 
-    if (charTyped == '`') {
-      App.editorMode = App.EditorMode.CMD;
-      for (Editor e : EditorFactory.getInstance().getAllEditors()) {
-        e.getSettings().setBlockCursor(true);
-      }
-      UiHelper.refresh(true);
-      doAction(dataContext, "EditorEscape");
-      return;
-    }
-
-
     if (App.editorMode == App.EditorMode.CMD) {
       if (modMapping.containsKey(charTyped)) {
         App.editorMode = modMapping.get(charTyped);
@@ -70,13 +59,11 @@ public class MyTypedActionHandler implements TypedActionHandler {
       return;
     }
 
-
     Map<String, String> keyMapping = modeMap.get(App.editorMode);
     if (keyMapping.containsKey(String.valueOf(charTyped))) {
       UiHelper.hot(charTyped, keyMapping.get(String.valueOf(charTyped)));
       doAction(dataContext, keyMapping.get(String.valueOf(charTyped)));
     }
-
 
   }
 
