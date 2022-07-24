@@ -49,7 +49,7 @@ public class UiHelper {
 
     Runnable runnable = () -> {
 
-      Map<String, String> keyMap = MyTypedActionHandler.modeMap.get(App.editorMode);
+      Map<String, String> keyMap = TypedHandler.modeMap.get(App.editorMode);
       if (keyMap != null) {
         leftPanel.removeAll();
         rightPanel.removeAll();

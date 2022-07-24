@@ -12,7 +12,7 @@
     </application-components>
 
     <extensions defaultExtensionNs="com.intellij">
-        <toolWindow id="ZenOfIdea" anchor="right" factoryClass="com.intellij.ide.actions.IDEAToolWindowFactory"/>
+        <toolWindow id="ZenOfIdea" anchor="right" factoryClass="com.intellij.ide.actions.ToolWindow"/>
     </extensions>
 
     <actions>

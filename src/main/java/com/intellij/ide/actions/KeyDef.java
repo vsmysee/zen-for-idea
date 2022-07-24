@@ -54,7 +54,7 @@ public class KeyDef {
       }
     }
 
-    MyTypedActionHandler.modeMap.put(App.EditorMode.CMD, defaultKey);
+    TypedHandler.modeMap.put(EditorMode.CMD, defaultKey);
 
 
     Map<String, String> COMMAND2 = new LinkedHashMap<>();
@@ -69,7 +69,7 @@ public class KeyDef {
     }
 
     //y
-    MyTypedActionHandler.modeMap.put(App.EditorMode.MOVE, COMMAND2);
+    TypedHandler.modeMap.put(EditorMode.MOVE, COMMAND2);
 
 
     Map<String, String> COMMAND3 = new LinkedHashMap<>();
@@ -85,7 +85,7 @@ public class KeyDef {
     }
 
     //S
-    MyTypedActionHandler.modeMap.put(App.EditorMode.SELECT, COMMAND3);
+    TypedHandler.modeMap.put(EditorMode.SELECT, COMMAND3);
 
   }
 

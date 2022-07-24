@@ -13,9 +13,9 @@ import org.jetbrains.annotations.NotNull;
 import java.util.HashMap;
 import java.util.Map;
 
-public class MyTypedActionHandler implements TypedActionHandler {
+public class TypedHandler implements TypedActionHandler {
 
-  public static Map<App.EditorMode, Map<String, String>> modeMap = new HashMap<>();
+  public static Map<EditorMode, Map<String, String>> modeMap = new HashMap<>();
 
   static {
     KeyDef.init();
@@ -23,29 +23,29 @@ public class MyTypedActionHandler implements TypedActionHandler {
 
   private TypedActionHandler origHandler;
 
-  public MyTypedActionHandler(TypedActionHandler handler) {
+  public TypedHandler(TypedActionHandler handler) {
     this.origHandler = handler;
   }
 
 
-  private void setCursors(App.EditorMode editorMode) {
+  private void setCursors(EditorMode editorMode) {
     for (Editor editor : EditorFactory.getInstance().getAllEditors()) {
-      editor.getSettings().setBlockCursor(editorMode != App.EditorMode.INSERT);
+      editor.getSettings().setBlockCursor(editorMode != EditorMode.INSERT);
     }
   }
 
-  private static Map<Character, App.EditorMode> modMapping = new HashMap<>();
+  private static Map<Character, EditorMode> modMapping = new HashMap<>();
 
   static {
-    modMapping.put('i', App.EditorMode.INSERT);
-    modMapping.put('y', App.EditorMode.MOVE);
-    modMapping.put('S', App.EditorMode.SELECT);
+    modMapping.put('i', EditorMode.INSERT);
+    modMapping.put('y', EditorMode.MOVE);
+    modMapping.put('S', EditorMode.SELECT);
   }
 
   @Override
   public void execute(@NotNull Editor editor, char charTyped, @NotNull DataContext dataContext) {
 
-    if (App.editorMode == App.EditorMode.CMD) {
+    if (App.editorMode == EditorMode.CMD) {
       if (modMapping.containsKey(charTyped)) {
         App.editorMode = modMapping.get(charTyped);
         UiHelper.refresh(true);
@@ -54,7 +54,7 @@ public class MyTypedActionHandler implements TypedActionHandler {
       }
     }
 
-    if (App.editorMode == App.EditorMode.INSERT) {
+    if (App.editorMode == EditorMode.INSERT) {
       origHandler.execute(editor, charTyped, dataContext);
       return;
     }

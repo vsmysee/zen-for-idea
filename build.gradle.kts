@@ -41,6 +41,7 @@ intellij {
 
 
 tasks {
+
     withType<JavaCompile> {
         sourceCompatibility = "1.8"
         targetCompatibility = "1.8"
@@ -66,7 +67,6 @@ tasks {
             }
         )
 
-        // Get the latest available change notes from the changelog file
         changeNotes(
             closure {
                 changelog.getLatest().toHTML()
