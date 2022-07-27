@@ -18,6 +18,7 @@
     <actions>
 
         <action id="ShowSelectActions" class="com.intellij.ide.actions.ActionPop"/>
+        <action id="MyModAction" class="com.intellij.ide.actions.ModAction"/>
 
     </actions>
 

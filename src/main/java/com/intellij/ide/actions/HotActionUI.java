@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class UiHelper {
+public class HotActionUI {
 
   public static List<String> hotActions = new ArrayList<>();
 
@@ -45,7 +45,6 @@ public class UiHelper {
     if (leftPanel == null || rightPanel == null) {
       return;
     }
-
 
     Runnable runnable = () -> {
 

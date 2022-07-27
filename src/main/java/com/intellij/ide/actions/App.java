@@ -9,9 +9,7 @@ import org.jetbrains.annotations.NotNull;
 
 
 public class App implements ApplicationComponent {
-
     public static EditorMode editorMode = EditorMode.CMD;
-
     private TypedHandler handler;
 
     @Override
@@ -24,7 +22,11 @@ public class App implements ApplicationComponent {
         action.setupHandler(handler);
 
         EditorFactory.getInstance().addEditorFactoryListener(new EditorCreated(), ApplicationManager.getApplication());
+
     }
+
+
+
 
     @Override
     public void disposeComponent() {
