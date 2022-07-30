@@ -14,7 +14,7 @@ type the key y
 
 ## Mode Select
 
-type the key S
+type the key I
 
 
 ## Hot Action

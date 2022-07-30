@@ -1,0 +1,8 @@
+h EditorLeft
+H EditorLineStart
+j EditorDown
+J EditorMoveToPageBottom
+k EditorUp
+K EditorMoveToPageTop
+l EditorRight
+L EditorLineEnd

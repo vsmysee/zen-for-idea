@@ -10,7 +10,7 @@ public class KeyDef {
 
         Map<String, String> defaultKey = new LinkedHashMap<>();
 
-        for (String txt : Arrays.asList("/cmd/BASE.txt", "/cmd/COMMAND1.txt")) {
+        for (String txt : Arrays.asList("/cmd/BASE.txt", "/cmd/COMMAND1.txt","/cmd/HJKL.txt")) {
             for (String configItem : FileLoader.load(txt)) {
                 String[] split = configItem.split(" ");
                 String key = split[0];
@@ -50,7 +50,7 @@ public class KeyDef {
             }
         }
 
-        //S
+        //I
         TypedHandler.modeMap.put(EditorMode.SELECT, COMMAND3);
 
     }

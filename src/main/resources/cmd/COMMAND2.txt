@@ -1,19 +1,33 @@
 1 ToggleLineBreakpoint
 2 QuickJavaDoc
-
+3 ShowProjectStructureSettings
 4 ProjectViewChangeView
+5 ShowNavBar
+6 ShowSettings
+7 HighlightUsagesInFile
+8 GotoTypeDeclaration
+9 GotoTest
+0 GotoAction
 
-0 HighlightUsagesInFile
 
 q EvaluateExpression
-
 w ClassNameCompletion
-
-P EditorToggleShowLineNumbers
-
 h CallHierarchy
-
 i InsertLiveTemplate
+s FileStructurePopup
+p ShowPopupMenu
+n NextProjectWindow
+
+L EditorToggleShowLineNumbers
+l GotoLine
+
+a $SelectAll
+x $Delete
+
+c CollapseRegion
+r ExpandRegion
+
+
 
 
 e MoveLineUp
