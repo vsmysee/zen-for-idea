@@ -1,7 +1,6 @@
 package com.intellij.ide.actions;
 
-import com.intellij.openapi.actionSystem.*;
-import com.intellij.openapi.application.ApplicationManager;
+import com.intellij.openapi.actionSystem.DataContext;
 import com.intellij.openapi.editor.Editor;
 import com.intellij.openapi.editor.actionSystem.EditorAction;
 import com.intellij.openapi.editor.actionSystem.EditorActionHandler;
@@ -36,21 +35,10 @@ public class ActionPop extends EditorAction {
             Runnable runnable = () -> {
                 if (list.getSelectedIndex() < 0) return;
 
-
                 String actionKey = (String) list.getSelectedValue();
                 String actionName = actionKey.split("=>")[1];
 
-                final AnAction action = ActionManager.getInstance().getAction(actionName.trim());
-                if (action != null) {
-
-                    ApplicationManager.getApplication().invokeLater(() -> {
-                        try {
-                            action.actionPerformed(new AnActionEvent(null, dataContext, "", new Presentation(), ActionManager.getInstance(), 0));
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    });
-                }
+                RunAction.run(actionName, dataContext);
 
             };
 

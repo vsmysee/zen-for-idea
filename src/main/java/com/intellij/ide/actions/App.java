@@ -25,9 +25,6 @@ public class App implements ApplicationComponent {
 
     }
 
-
-
-
     @Override
     public void disposeComponent() {
         EditorActionManager manager = EditorActionManager.getInstance();
