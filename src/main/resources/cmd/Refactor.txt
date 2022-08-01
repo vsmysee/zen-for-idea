@@ -1,0 +1,8 @@
+$ IntroduceConstant
+% IntroduceField
+6 IntroduceVariable
+& IntroduceParameter
+^ RenameElement
+} ExtractMethod
+[ Inline
+G EditorJoinLines
