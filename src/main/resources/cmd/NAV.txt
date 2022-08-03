@@ -7,7 +7,6 @@
 d GotoDeclaration
 + JumpToNextChange
 = JumpToLastChange
-' GotoSuperMethod
 s NextSplitter
 b Back
 B Forward

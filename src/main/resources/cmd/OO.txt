@@ -1,3 +1,4 @@
 ] ImplementMethods
 " OverrideMethods
+' GotoSuperMethod
 D GotoImplementation
