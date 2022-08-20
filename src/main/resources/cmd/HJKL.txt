@@ -1,8 +1,8 @@
 h EditorLeft
 H EditorLineStart
 j EditorDown
-J EditorMoveToPageBottom
+J OH_MotionLastLine
 k EditorUp
-K EditorMoveToPageTop
+K OH_MotionFirstLine
 l EditorRight
 L EditorLineEnd

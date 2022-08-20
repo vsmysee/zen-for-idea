@@ -20,6 +20,10 @@
         <action id="ShowSelectActions" class="com.intellij.ide.actions.ActionPop"/>
         <action id="MyModAction" class="com.intellij.ide.actions.ModAction"/>
 
+
+        <action id="OH_MotionFirstLine" class="com.intellij.ide.actions.custom.MotionGotoLineFirstAction"/>
+        <action id="OH_MotionLastLine" class="com.intellij.ide.actions.custom.MotionGotoLineLastAction"/>
+
     </actions>
 
 </idea-plugin>
