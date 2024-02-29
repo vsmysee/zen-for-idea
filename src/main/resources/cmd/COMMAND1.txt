@@ -15,7 +15,6 @@ e EditorSelectWord
 E EditorUnSelectWord
 r $Redo
 R CloseContent
-u $Undo
 U EditorToggleCase
 o EditorStartNewLine
 O ShowIntentionActions

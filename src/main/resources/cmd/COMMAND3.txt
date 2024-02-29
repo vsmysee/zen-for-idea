@@ -1,4 +1,3 @@
-
 q ShowBookmarks
 w EditorDeleteToWordStart
 W EditorDeleteToWordEnd
