@@ -13,7 +13,6 @@ q FindUsages
 Q ShowUsages
 e EditorSelectWord
 E EditorUnSelectWord
-r $Redo
 R CloseContent
 U EditorToggleCase
 o EditorStartNewLine
